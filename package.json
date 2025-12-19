@@ -2,14 +2,19 @@
   "name": "meow-videos",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "upload": "node scripts/upload.js",
+    "sync": "node scripts/sync.js"
   },
   "dependencies": {
     "next": "16.1.0",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "dotenv": "^16.4.5",
+    "form-data": "^4.0.1"
   }
 }
